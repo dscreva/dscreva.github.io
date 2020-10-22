@@ -1,0 +1,110 @@
+
+.events_container{
+    width: 80%;
+    height: fit-content;
+    padding: 60px 50px 20px 50px;
+    margin: auto;
+    border: solid 1px rgb(204, 204, 204);
+    border-radius: 5px;
+}
+.events_container_top {
+    position: relative;
+}
+.event_details{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 10px 0px 10px 20px;
+}
+
+.dateAndType{
+    line-height: 30px;
+}
+.event_date{
+    font-size: 15px;
+    font-weight: bold;
+    color: green;
+    margin: 5px;
+}
+.event_type{
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #666C73;
+}
+.otherdetails{
+    text-align: left;
+}
+.upcomingEventImage{
+        float: left;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 3px 3px  rgb(172, 172, 172);
+        margin-bottom: 20px;
+        margin-right: 45px;
+        margin-left: 50px;
+    }
+
+.event_description{
+    float: none;
+    font-size: 20px;
+    color: #666C73;
+}
+.event_title {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 46px;
+    /* Google Grey */
+    color: #666C73;
+}
+.dummy{
+    text-align: center;
+}
+.viewDetails{
+    background-color: #2d7eea; 
+    border: none;
+    color: #e8f1fd;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px  rgb(172, 172, 172);
+    cursor: pointer;
+}
+.viewDetails:hover{
+    background-color: #0169f1; 
+}
+.details{
+    margin: 10px;
+}
+
+.UpcomingEventsTitle{
+    margin-top: 20px;
+    margin-left: 70px;
+    font-size: 45px;
+    font-weight: normal;
+    /* Google Grey */
+    color: #666C73;
+    padding-top: 20px;
+    padding-bottom: 0px;
+
+}
+
+@media only screen and (max-width: 744px) {
+    .upcomingEventImage{
+        float: none;
+        margin-right: 45px;
+        margin-left: 35px;
+  }
+  .dateAndType{
+      text-align: left;
+  }
+
+  .event_title{
+      font-size: 25px;
+  }
+}
