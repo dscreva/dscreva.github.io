@@ -1,0 +1,9 @@
+
+.Events{
+    display: flex;
+    flex-direction: row;
+}
+
+.child{
+    position: absolute;
+}
