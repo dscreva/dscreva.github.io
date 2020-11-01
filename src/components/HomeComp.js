@@ -1,51 +1,49 @@
-import React, {Component} from "react"
-import { NavLink } from "react-router-dom";
-class Home extends Component{
+import React from "react";
+import "./styles/HomeComp.css";
 
-  frosting(){
+function HomeComp() {
+  return (
+    <div className="home">
+      <section className="top-navigation">
+        <a href="/">Events</a>
+        <span className="line"></span>
+        <a href="/" className="logo">
+          <img
+            src={require("./static/logo.png")}
+            alt="dsc reva"
+            style={{ marginRight: "0.5rem" }}
+          />
+          DSC REVA
+        </a>
+        <span className="line"></span>
+        <a href="/">Teams</a>
+      </section>
 
-    document.querySelector(".frost_container:hover").onmousemove = e => {
-        const x = e.pageX - e.target.offsetLeft;
-        const y = e.pageY - e.target.offsetTop;
-    
-        e.target.style.setProperty("--x", `${x}px`);
-        e.target.style.setProperty("--y", `${y}px`);
-    };
-  }
+      <section className="hero">
+        <h2>
+          Joi<span style={{ color: "#EA4335" }}>n</span> Our{" "}
+          <span style={{ color: "#FBBC04" }}>C</span>om
+          <span style={{ color: "#1A73E8" }}>m</span>u
+          <span style={{ color: "#0F9D58" }}>n</span>ity
+        </h2>
+        <h4>Our Mission</h4>
+      </section>
 
-  close(){
-    window.history.go(-1);
-  }
+      <section className="bottom-navigation">
+        <a href="/" style={{ color: "#0F9D58" }}>
+          Blogs
+        </a>
+        <a href="/" style={{ color: "#1A73E8" }}>
+          Domains
+        </a>
+        <a href="/" style={{ color: "#EA4335" }}>
+          About Us
+        </a>
 
-  
-  render(){
-    return(
-      <div className="container">
-        <div className="col l8 m8 s12">
-          <h1 style={{fontSize: "20vh"}}><span>Home Page</span></h1><br />
-          <button className="btn-large frost_container red lighten-1" onMouseOver={this.frosting} onClick={this.close}>
-            <span className="frost">Back</span>
-          </button>
-          <br /><br />
-          <NavLink to="/fedw">
-            <button className="btn-large frost_container green lighten-1">
-              <span className="frost">Front End Development Workshop 2019</span>
-            </button>
-          </NavLink>
-          <br /><br />
-          <NavLink to="/team">
-            <button className="btn-large frost_container green lighten-1">
-              <span className="frost">The Team</span>
-            </button>
-          </NavLink>
-          
-          <br /><br />
-        </div>
-      </div>
-    );
-  }
-
+        <a href="/" style={{marginLeft:"auto"}}>Contact Us</a>
+      </section>
+    </div>
+  );
 }
 
-
-export default Home;
+export default HomeComp;
