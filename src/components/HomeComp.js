@@ -1,22 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/HomeComp.css";
 
 function HomeComp() {
   return (
     <div className="home">
       <section className="top-navigation">
-        <a href="/">Events</a>
+        <Link href="/events">Events</Link>
         <span className="line"></span>
-        <a href="/" className="logo">
+        <Link href="/" className="logo">
           <img
             src={require("./static/logo.png")}
             alt="dsc reva"
             style={{ marginRight: "0.5rem" }}
           />
           DSC REVA
-        </a>
+        </Link>
         <span className="line"></span>
-        <a href="/">Teams</a>
+        <Link href="/team">Teams</Link>
       </section>
 
       <section className="hero">
@@ -30,17 +31,17 @@ function HomeComp() {
       </section>
 
       <section className="bottom-navigation">
-        <a href="/" style={{ color: "#0F9D58" }}>
+        <Link href="/" style={{ color: "#0F9D58" }}>
           Blogs
-        </a>
-        <a href="/" style={{ color: "#1A73E8" }}>
+        </Link>
+        <Link href="/" style={{ color: "#1A73E8" }}>
           Domains
-        </a>
-        <a href="/" style={{ color: "#EA4335" }}>
+        </Link>
+        <Link href="/" style={{ color: "#EA4335" }}>
           About Us
-        </a>
+        </Link>
 
-        <a href="/" >Contact Us</a>
+        <Link href="/">Contact Us</Link>
       </section>
     </div>
   );
