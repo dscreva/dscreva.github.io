@@ -78,6 +78,22 @@ section.hero {
   transform: translate(-50%, -50%);
 }
 
+.about-us-hover-btn {  
+  position: relative;
+}
+
+.about-us-hover-btn:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #EA4335;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.about-us-hover-btn:hover::after {
+  transform: scaleX(0.5);
+}
+
 @media (max-width: 767.98px) {
   .home {
     padding: 1.5rem;

@@ -32,13 +32,13 @@ function HomeComp() {
 
       <section className="bottom-navigation">
         <Link to="/blogs" style={{ color: "#0F9D58" }}>
-          Blogs
+          <span className="blogs-hover-btn">Blogs</span>
         </Link>
         <Link to="/" style={{ color: "#1A73E8" }}>
-          Domains
+          <span className="domains-hover-btn">Domains</span>
         </Link>
         <Link to="/about" style={{ color: "#EA4335" }}>
-          About Us
+          <span className="about-us-hover-btn">About Us</span>
         </Link>
 
         <Link to="/">Contact Us</Link>

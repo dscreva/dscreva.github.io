@@ -28,10 +28,10 @@ function HomeComp() {
 
       <section className="bottom-navigation">
         <NavLink to="/blogs" style={{ color: "#0F9D58" }}>
-          Blogs
+          <span className="blogs-hover-btn">Blogs</span>
         </NavLink>
         <NavLink to="/" style={{ color: "#1A73E8" }}>
-          Domains
+          <span className="domains-hover-btn">Domains</span>
         </NavLink>
         <NavLink to="/about" style={{ color: "#EA4335" }}>
           <span className="about-us-btn">About Us</span>
