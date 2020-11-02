@@ -37,7 +37,7 @@ function HomeComp() {
         <Link to="/" style={{ color: "#1A73E8" }}>
           Domains
         </Link>
-        <Link to="/" style={{ color: "#EA4335" }}>
+        <Link to="/about" style={{ color: "#EA4335" }}>
           About Us
         </Link>
 
