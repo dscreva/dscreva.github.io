@@ -40,7 +40,7 @@ function HomeComp() {
           About Us
         </a>
 
-        <a href="/" style={{marginLeft:"auto"}}>Contact Us</a>
+        <a href="/" >Contact Us</a>
       </section>
     </div>
   );
