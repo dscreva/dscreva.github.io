@@ -6,9 +6,9 @@ function HomeComp() {
   return (
     <div className="home">
       <section className="top-navigation">
-        <Link href="/events">Events</Link>
+        <Link to="/events">Events</Link>
         <span className="line"></span>
-        <Link href="/" className="logo">
+        <Link to="/" className="logo">
           <img
             src={require("./static/logo.png")}
             alt="dsc reva"
@@ -17,7 +17,7 @@ function HomeComp() {
           DSC REVA
         </Link>
         <span className="line"></span>
-        <Link href="/team">Teams</Link>
+        <Link to="/team">Teams</Link>
       </section>
 
       <section className="hero">
@@ -31,17 +31,17 @@ function HomeComp() {
       </section>
 
       <section className="bottom-navigation">
-        <Link href="/" style={{ color: "#0F9D58" }}>
+        <Link to="/blogs" style={{ color: "#0F9D58" }}>
           Blogs
         </Link>
-        <Link href="/" style={{ color: "#1A73E8" }}>
+        <Link to="/" style={{ color: "#1A73E8" }}>
           Domains
         </Link>
-        <Link href="/" style={{ color: "#EA4335" }}>
+        <Link to="/" style={{ color: "#EA4335" }}>
           About Us
         </Link>
 
-        <Link href="/">Contact Us</Link>
+        <Link to="/">Contact Us</Link>
       </section>
     </div>
   );
