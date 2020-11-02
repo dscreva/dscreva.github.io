@@ -1,0 +1,112 @@
+.home {
+  padding: 3rem;
+}
+
+.home section.top-navigation {
+  text-align: center;
+}
+
+.home span.line {
+  border-left: 2px solid #666c73;
+}
+
+.home section.top-navigation a {
+  color: #666c73;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 3rem;
+}
+
+.home section.top-navigation a.logo {
+  font-size: 2.5rem;
+}
+
+.home section.bottom-navigation a {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0 5vw;
+}
+
+.home section.bottom-navigation a:last-child {
+  color: #666c73;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 60px;
+  border: 2px solid #666c73;
+  position: absolute;
+  right: 0;
+}
+.home section.bottom-navigation a:last-child:hover {
+  color: #fbbc04;
+  border: 2px solid #fbbc04;
+}
+
+section.hero {
+  background-image: url("../static/home_theme/background.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin: 2rem 1rem;
+  border-radius: 10px;
+  height: 70vh;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 60%;
+  margin: 3rem;
+}
+
+.hero h2 {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5vw;
+}
+.hero h4 {
+  font-size: 1.5vw;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+@media (max-width: 767.98px) { 
+  .home {
+    padding: 1.5rem;
+  }
+  .home section.top-navigation a {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  .home section.top-navigation a img{
+    width: 8%;
+  }
+  .hero h2 {
+  font-size: 4vw;
+}
+.hero h4 {
+  font-size: 3vw;
+}
+.home section.bottom-navigation{
+  text-align: center;
+}
+.home section.bottom-navigation a {
+  margin: 0 2.5vw;
+}
+.home section.bottom-navigation a:last-child {
+position: static;
+margin: 1.5vw;
+}
+
+ }
