@@ -7,6 +7,7 @@ import Home from "./components/HomeComp";
 import FourZeroFour from "./components/FourZeroFourComp";
 import Team from "./components/TeamComp";
 import Events from "./components/EventComp";
+import ABout from "./components/AboutComp";
 
 import FEDW from "./components/rewinds/rewind_fedw19";
 
@@ -21,7 +22,7 @@ class App extends Component{
             <Route path="/team" component={Team} />
             <Route path="/events" component={Events} />
             <Route path="/blogs" component={Events} />
-
+            <Route path="/about" component={ABout} />
             <Route path="/fedw" component={FEDW} />
 
             <Route component={FourZeroFour} />
