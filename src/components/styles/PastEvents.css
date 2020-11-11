@@ -1,13 +1,10 @@
 
 .pastEventsContainer{
+  width: 87vw;
+}
 
-  margin-bottom: 350px;
-}
-.events_row{
-  margin-bottom: 400px;
-}
-#eventsSwiper{
-    width: 800px !important;
+.swiper-container{
+  position: relative;
 }
 
 .rewind{

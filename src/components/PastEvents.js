@@ -46,7 +46,7 @@ export default class PastEvents extends Component{
           spaceBetween: 0,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 30,
         },
         1024: {
@@ -68,8 +68,8 @@ export default class PastEvents extends Component{
         <div className="pastEventsContainer">
           <div className="PastEventsTitle">Past Events</div>
             <br />
-            <div className="events_row">
-              
+
+            <div className="events_row">  
               <div class="swiper-container" style={{width: "94vw", padding: "5px", marginBottom: "20px"}}>
                 <div id="eventsSwiper" class="swiper-wrapper">
                   {events.map(function (events, index) {

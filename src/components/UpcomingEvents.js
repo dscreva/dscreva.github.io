@@ -33,8 +33,8 @@ export default class PastEvents extends Component{
           </div>
     
         <div className="events_container">
-        <div className="events_container_top">
-          <img className="upcomingEventImage" src={require(`${this.props.events_new.image_url}`)} alt={this.props.events_new.name}/>       
+        <div className="events_container_top">       
+          <img class="upcomingEventImage" alt="" src={require(`${this.props.events_new.image_url}`)} />
           </div>
               <div className="dateAndType">
                 <div className="event_date">{this.props.events_new.date}</div>

@@ -11,10 +11,11 @@
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-elastic-carousel": "^0.9.4",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "react-slideshow-image": "^3.3.0",
+    "styled-components": "^5.2.1",
     "swiper": "^6.3.2"
   },
   "scripts": {
@@ -37,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/brainhubeu__react-carousel": "^2.0.2"
   }
 }
