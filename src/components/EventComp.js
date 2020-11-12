@@ -1,5 +1,10 @@
-import React, {Component} from "react"
-import { NavLink } from "react-router-dom";
+import React, {Component} from "react";
+import Logo from './static/logo.svg';
+import UpcomingEvents from './UpcomingEvents';
+import PastEvents from './PastEvents';
+import events_new from '../UpcomingEventDetails'
+import events from "../PastEventsDetails";
+
 class Events extends Component{
 
   frosting(){
@@ -16,25 +21,52 @@ class Events extends Component{
   close(){
     window.history.go(-1);
   }
+  constructor(props) {
+    super(props)
+    this.state = {
+      all_events: events_new, 
+      curr_event:0 
+    }
+    this.setAllEvents= this.setAllEvents.bind(this);
+    this.setCurrEvent= this.setCurrEvent.bind(this);
+  }
 
+  setAllEvents(_all_events) {
+    this.setState({all_events: _all_events});
+  }
+
+  setCurrEvent(_curr_event) {
+    this.setState({curr_event: _curr_event});
+  }
+
+  handleNext = () => {
+    if(this.state.curr_event<this.state.all_events.length-1){
+      this.setState({curr_event: this.state.curr_event+1})
+    }
+  }
+
+  handlePrev = () =>{
+    if(this.state.curr_event>0){
+      this.setState({curr_event: this.state.curr_event-1})
+    }
+  }
   
   render(){
     return(
-      <div className="container">
-        <div className="col l8 m8 s12">
-          <h1 style={{fontSize: "20vh"}}><span>Events Page</span></h1><br />
-          <button className="btn-large frost_container red lighten-1" onMouseOver={this.frosting} onClick={this.close}>
-            <span className="frost">Back</span>
-          </button>
-          <br />
-          <NavLink to="/fedw">
-            <button className="btn-large frost_container green lighten-1">
-              <span className="frost">Front End Development Workshop 2019</span>
-            </button>
-          </NavLink>
-          
-          <br /><br />
+      <div>
+        <div className="header">
+          <img src={Logo} className="logo" alt=""/>
+          DSC REVA
+          <a href="#/team" data-target="slide-out" className="sidenav-trigger "><i className="material-icons">menu</i></a>
         </div>
+
+          <div className="Events">
+            <UpcomingEvents events_new={this.state.all_events[this.state.curr_event]} handlePrev={this.handlePrev} handleNext={this.handleNext} />
+          <div className="child">
+            <PastEvents events_new={events_new} setAllEvents={this.setAllEvents} setCurrEvent={this.setCurrEvent} />
+          </div>
+          </div>
+
       </div>
     );
   }
