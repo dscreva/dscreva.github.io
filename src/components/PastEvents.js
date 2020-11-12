@@ -70,10 +70,10 @@ export default class PastEvents extends Component{
             <br />
             <div className="events_row">
               
-              <div class="swiper-container" style={{width: "94vw", padding: "5px", marginBottom: "20px"}}>
+              <div class="swiper-container" id="pastEventsSwiperContainer" style={{width: "94vw", padding: "5px", marginBottom: "20px"}}>
                 <div id="eventsSwiper" class="swiper-wrapper">
                   {events.map(function (events, index) {
-                    return <div class="swiper-slide" style={{border: "solid 2px rgb(204, 204, 204)", borderRadius: "5px", marginLeft: "35px"}}>
+                    return <div class="swiper-slide" id="pastEventsSwiperSlide" style={{border: "solid 2px rgb(204, 204, 204)", borderRadius: "5px", marginLeft: "35px"}}>
                       <div className="imageStyles">
                         <img class="pastEventsSlide" alt="" src={require(`${events.image_url}`)} key={index}/>
                       </div>

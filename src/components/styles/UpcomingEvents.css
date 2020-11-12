@@ -97,8 +97,7 @@
 @media only screen and (max-width: 744px) {
     .upcomingEventImage{
         float: none;
-        margin-right: 45px;
-        margin-left: 35px;
+        margin-left: 65px;
   }
   .dateAndType{
       text-align: left;
