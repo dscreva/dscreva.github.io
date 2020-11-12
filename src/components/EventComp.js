@@ -60,6 +60,8 @@ class Events extends Component{
           <a href="#/team" data-target="slide-out" className="sidenav-trigger "><i className="material-icons">menu</i></a>
         </div>
 
+          {/* Here we are rendering the Upcoming Events and Past Events Components */}
+
           <div className="Events">
             <UpcomingEvents events_new={this.state.all_events[this.state.curr_event]} handlePrev={this.handlePrev} handleNext={this.handleNext} />
           <div className="child">
