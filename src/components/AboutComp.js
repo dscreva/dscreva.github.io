@@ -22,7 +22,8 @@ function HomeComp() {
 
       <section className="about-content">
         <h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo facilisis elit commodo, et facilisis elit est non lobortis. Laoreet neque, faucibus nisl quis venenatis sed sed aliquet aenean. In turpis sed morbi quam eget adipiscing pharetra malesuada. Ut eget vitae ut diam nullam varius orci potenti tellusbbjbb dhf nulllars jofolvffg.
+          <h2>About Us</h2>
+          DSC REVA is a community group for students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.
         </h3>
       </section>
 
