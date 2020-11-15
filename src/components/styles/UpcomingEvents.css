@@ -13,7 +13,6 @@
 .event_details{
     display: flex;
     flex-direction: row;
-    height: 100%;
     margin: 10px 0px 10px 20px;
 }
 
@@ -44,7 +43,6 @@
     box-shadow: 3px 0.5px 3px 5px  rgb(172, 172, 172);
     margin-bottom: 20px;
     margin-right: 45px;
-    margin-left: 50px;
 }
 
 .event_description{
