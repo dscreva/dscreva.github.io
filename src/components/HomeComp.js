@@ -27,15 +27,12 @@ function HomeComp() {
           <span style={{ color: "#1A73E8" }}>m</span>u
           <span style={{ color: "#0F9D58" }}>n</span>ity
         </h2>
-        <h4>Our Mission</h4>
+        <p>Our main mission here at DSC REVA is to provide students access to the latest updates in technology through workshops, hackathons, and seminars by experts from the industry. And remember, the only way to stay relevant in the field of tech is to be ready to learn and unlearn whenever required.</p>
       </section>
 
       <section className="bottom-navigation">
         <Link to="/blogs" style={{ color: "#0F9D58" }}>
           Blogs
-        </Link>
-        <Link to="/" style={{ color: "#1A73E8" }}>
-          Domains
         </Link>
         <Link to="/" style={{ color: "#EA4335" }}>
           About Us
