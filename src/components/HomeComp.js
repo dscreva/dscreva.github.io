@@ -34,8 +34,8 @@ function HomeComp() {
         <Link to="/blogs" style={{ color: "#0F9D58" }}>
           <span className="blogs-hover-btn">Blogs</span>
         </Link>
-        <Link to="/" style={{ color: "#EA4335" }}>
-          About Us
+        <Link to="/about" style={{ color: "#EA4335" }}>
+          <span className="about-us-hover-btn">About Us</span>
         </Link>
 
         <Link to="/contact-us">Contact Us</Link>
