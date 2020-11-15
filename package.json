@@ -12,8 +12,14 @@
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+<<<<<<< HEAD
     "react-scripts": "^3.4.4",
+=======
+    "react-scripts": "^3.4.3",
+    "react-slick": "^0.27.13",
+>>>>>>> upstream/master
     "react-slideshow-image": "^3.3.0",
+    "slick-carousel": "^1.8.1",
     "swiper": "^6.3.2"
   },
   "scripts": {

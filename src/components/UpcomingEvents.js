@@ -2,6 +2,7 @@ import React, {Component} from "react"
 import './styles/UpcomingEvents.css';
 import prev from './static/prev.png';
 import next from './static/next.png';
+import { Thumbs } from "swiper";
 
 // import { NavLink } from "react-router-dom";
 
@@ -33,8 +34,8 @@ export default class PastEvents extends Component{
           </div>
     
         <div className="events_container">
-        <div className="events_container_top">
-          <img className="upcomingEventImage" src={require(`${this.props.events_new.image_url}`)} alt={this.props.events_new.name}/>       
+        <div className="events_container_top">       
+          <img class="upcomingEventImage" alt="" src={require(`${this.props.events_new.image_url}`)} />
           </div>
               <div className="dateAndType">
                 <div className="event_date">{this.props.events_new.date}</div>
@@ -45,7 +46,7 @@ export default class PastEvents extends Component{
                   <div className="event_description">{this.props.events_new.description}</div>
                     <div className="dummy">
                       <br />
-                      <button className="viewDetails">View Details</button>
+                      <a href={this.props.events_new.link} className="viewDetails">View Details</a>
                     </div>
                     </div>
         </div>
