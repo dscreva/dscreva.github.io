@@ -71,7 +71,6 @@ export default class PastEvents extends Component{
                         <p>{events.title}</p>
                         <div className="rewindFeedback">
                           <a href ={events.link} className="rewind">Rewind</a>
-                          <a className="feedback">Feedback</a>
                         </div>
                           </div>
                       })}
