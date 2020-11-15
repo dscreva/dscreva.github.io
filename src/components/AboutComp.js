@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./styles/HomeComp.css";
 import "./styles/AboutComp.css";
 
 function HomeComp() {
@@ -30,9 +31,6 @@ function HomeComp() {
       <section className="bottom-navigation">
         <NavLink to="/blogs" style={{ color: "#0F9D58" }}>
           <span className="blogs-hover-btn">Blogs</span>
-        </NavLink>
-        <NavLink to="/" style={{ color: "#1A73E8" }}>
-          <span className="domains-hover-btn">Domains</span>
         </NavLink>
         <NavLink to="/about" style={{ color: "#EA4335" }}>
           <span className="about-us-btn">About Us</span>
