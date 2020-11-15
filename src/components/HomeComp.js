@@ -38,7 +38,7 @@ function HomeComp() {
           About Us
         </Link>
 
-        <Link to="/">Contact Us</Link>
+        <Link to="/contact-us">Contact Us</Link>
       </section>
     </div>
   );
