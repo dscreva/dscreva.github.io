@@ -27,21 +27,18 @@ function HomeComp() {
           <span style={{ color: "#1A73E8" }}>m</span>u
           <span style={{ color: "#0F9D58" }}>n</span>ity
         </h2>
-        <h4>Our Mission</h4>
+        <p>Our main mission here at DSC REVA is to provide students access to the latest updates in technology through workshops, hackathons, and seminars by experts from the industry. And remember, the only way to stay relevant in the field of tech is to be ready to learn and unlearn whenever required.</p>
       </section>
 
       <section className="bottom-navigation">
         <Link to="/blogs" style={{ color: "#0F9D58" }}>
           <span className="blogs-hover-btn">Blogs</span>
         </Link>
-        <Link to="/" style={{ color: "#1A73E8" }}>
-          <span className="domains-hover-btn">Domains</span>
-        </Link>
-        <Link to="/about" style={{ color: "#EA4335" }}>
-          <span className="about-us-hover-btn">About Us</span>
+        <Link to="/" style={{ color: "#EA4335" }}>
+          About Us
         </Link>
 
-        <Link to="/">Contact Us</Link>
+        <Link to="/contact-us">Contact Us</Link>
       </section>
     </div>
   );
