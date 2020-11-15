@@ -1,7 +1,7 @@
-import React, {Component} from "react"
-import {HashRouter as Router, Route, Switch} from "react-router-dom";
+import React, { Component } from "react";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import "materialize-css";
-import './App.css';
+import "./App.css";
 
 import Home from "./components/HomeComp";
 import FourZeroFour from "./components/FourZeroFourComp";
@@ -11,28 +11,42 @@ import ABout from "./components/AboutComp";
 
 import FEDW from "./components/rewinds/rewind_fedw19";
 
-class App extends Component{
-  
-  render(){
-    return(
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Home} />
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
 
-            <Route path="/team" component={Team} />
-            <Route path="/events" component={Events} />
-            <Route path="/blogs" component={Events} />
-            <Route path="/about" component={ABout} />
-            <Route path="/fedw" component={FEDW} />
+          <Route path="/team" component={Team} />
 
-            <Route component={FourZeroFour} />
+          <Route path="/events" component={Events} />
 
-          </Switch>
-        </Router>
+          <Route
+            path="/blogs"
+            component={() => {
+              window.location.href = "https://medium.com/";
+              return null;
+            }}
+          />
+
+          <Route
+            path="/contact-us"
+            component={() => {
+              window.location.href = "https://dsc.community.dev/reva-university/";
+              return null;
+            }}
+          />
+
+          <Route path="/about" component={ABout} />
+
+          <Route path="/fedw" component={FEDW} />
+
+          <Route component={FourZeroFour} />
+        </Switch>
+      </Router>
     );
   }
-
 }
-
 
 export default App;
