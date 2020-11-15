@@ -1,11 +1,14 @@
 import React, {Component} from "react"
 import './styles/PastEvents.css';
 import events from '../PastEventsDetails.js';
-import Swiper from 'swiper';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 // import { NavLink } from "react-router-dom";
 
 export default class PastEvents extends Component{
+
 
   frosting(){
 
@@ -27,74 +30,54 @@ export default class PastEvents extends Component{
       all_events: events, 
     }
   }
-
-  componentDidMount () {
-    // For bottom image slider
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      spaceBetween: 0,
-      grabCursor: true,
-      loop: true,
-      freeMode: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        500: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        }
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  }
-
   
   render(){ 
+    const settings = {
+      className: 'center',
+      dots: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 320,
+          settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true }
+        },
+        {
+          breakpoint: 768,
+          settings: { slidesToShow: 2, slidesToScroll: 2, infinite: true }
+        },
+        {
+          breakpoint: 1024,
+          settings: { slidesToShow: 3, slidesToScroll: 3, infinite: true }
+        }
+      ]
+    };
+
+    
+
       return (
 
+        <>
+        <div className="PastEventsTitle">Past Events</div>
         <div className="pastEventsContainer">
-          <div className="PastEventsTitle">Past Events</div>
             <br />
-            <div className="events_row">
               
-              <div class="swiper-container" id="pastEventsSwiperContainer" style={{width: "94vw", padding: "5px", marginBottom: "20px"}}>
-                <div id="eventsSwiper" class="swiper-wrapper">
-                  {events.map(function (events, index) {
-                    return <div class="swiper-slide" id="pastEventsSwiperSlide" style={{border: "solid 2px rgb(204, 204, 204)", borderRadius: "5px", marginLeft: "35px"}}>
-                      <div className="imageStyles">
-                        <img class="pastEventsSlide" alt="" src={require(`${events.image_url}`)} key={index}/>
-                      </div>
-                      <div className="past_title">
-                        {events.title}
-                      </div>
+              <Slider className="pastEventsSlider" {...settings}>
+             
+                    {events.map(function (events, index) {
+                        return <div className="pastEventsBox">
+                        <img className="pastEventsImagePoster" src={require(`${events.image_url}`)} alt="" />
+                        <p>{events.title}</p>
                         <div className="rewindFeedback">
-                          <button className="rewind">Rewind</button>
-                          <button className="feedback">Feedback</button>
+                          <a href ={events.link} className="rewind">Rewind</a>
+                          <a className="feedback">Feedback</a>
                         </div>
-                    </div>
-                     })}
-                </div>
-                <div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-                </div>
-              </div>
+                          </div>
+                      })}
+              </Slider>
           </div>
-        </div>
-
+        </>
       );
     }
 
