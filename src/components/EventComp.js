@@ -3,7 +3,6 @@ import Logo from './static/logo.svg';
 import UpcomingEvents from './UpcomingEvents';
 import PastEvents from './PastEvents';
 import events_new from '../UpcomingEventDetails'
-import events from "../PastEventsDetails";
 
 class Events extends Component{
 
@@ -57,7 +56,7 @@ class Events extends Component{
         <div className="header">
           <img src={Logo} className="logo" alt=""/>
           DSC REVA
-          <a data-target="slide-out" className="sidenav-trigger "><i className="material-icons" onClick>menu</i></a>
+          <a data-target="slide-out" className="sidenav-trigger " href="/events"><i className="material-icons" onClick>menu</i></a>
         </div>
 
           {/* Here we are rendering the Upcoming Events and Past Events Components */}

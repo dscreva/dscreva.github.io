@@ -2,7 +2,6 @@ import React, {Component} from "react"
 import './styles/UpcomingEvents.css';
 import prev from './static/prev.png';
 import next from './static/next.png';
-import { Thumbs } from "swiper";
 
 // import { NavLink } from "react-router-dom";
 
