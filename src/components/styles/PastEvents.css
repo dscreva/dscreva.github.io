@@ -1,6 +1,5 @@
 
 .pastEventsContainer{
-  width: 80%;
   margin: auto;
 }
 
@@ -41,13 +40,13 @@
   }
 
 .pastEventsSlider{
-  width: 500px !important;
+  width: 500px ;
 }
 
 .pastEventsImagePoster{
   border-radius: 30px;
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
   padding: 17px;
 }
 

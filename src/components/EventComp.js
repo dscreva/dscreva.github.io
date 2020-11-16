@@ -57,14 +57,14 @@ class Events extends Component{
         <div className="header">
           <img src={Logo} className="logo" alt=""/>
           DSC REVA
-          <a href="#/team" data-target="slide-out" className="sidenav-trigger "><i className="material-icons">menu</i></a>
+          <a data-target="slide-out" className="sidenav-trigger "><i className="material-icons" onClick>menu</i></a>
         </div>
 
           {/* Here we are rendering the Upcoming Events and Past Events Components */}
 
-          <div className="Events">
+          <div className="row">
             <UpcomingEvents events_new={this.state.all_events[this.state.curr_event]} handlePrev={this.handlePrev} handleNext={this.handleNext} />
-          <div className="child">
+          <div className="row">
             <PastEvents events_new={events_new} setAllEvents={this.setAllEvents} setCurrEvent={this.setCurrEvent} />
           </div>
           </div>
