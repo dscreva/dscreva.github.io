@@ -194,8 +194,12 @@ const members = [
         socials: [
             {
                 site:"linkedin",
-                link:"http://www.linkedin.com/in/droy2357"
+                link:"https://www.linkedin.com/in/droy2357/"
             },
+            {
+                site:"github",
+                link:"https://github.com/dROY2357"
+            }
         ],
     }, 
     {
@@ -208,7 +212,7 @@ const members = [
         socials: [
             {
                 site:"linkedin",
-                link:"nil",
+                link:"https://www.linkedin.com/in/shraddha-k-34888b1a7",
             },
         ],
     },  
@@ -222,7 +226,7 @@ const members = [
         socials: [
             {
                 site:"linkedin",
-                link:"nil"
+                link:"https://www.linkedin.com/in/vishnu-sai-224004195/"
             },
         ],
     },  
@@ -250,7 +254,7 @@ const members = [
         socials: [
             {
                 site:"linkedin",
-                link:"nil"
+                link:"https://www.linkedin.com/in/shivendra-saurav-80a8ba191"
             },
         ],
     },  
@@ -278,7 +282,7 @@ const members = [
         socials: [
             {
                 site:"linkedin",
-                link:"nil"
+                link:"https://www.linkedin.com/in/shubham-baid-6683b314b"
             },
         ],
     }, 
@@ -292,7 +296,7 @@ const members = [
         socials: [
             {
                 site:"linkedin",
-                link:"nil"
+                link:"https://www.linkedin.com/in/m-vijay-bhargav-reddy-252481135"
             },
         ],
     }, 
