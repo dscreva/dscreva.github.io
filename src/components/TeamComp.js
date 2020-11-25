@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {Component} from "react"
 import Logo from './static/logo.svg';
 import TeamLeft from './TeamLeft';
