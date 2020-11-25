@@ -307,12 +307,7 @@ const members = [
         tags: ['SPOC', 'Tech', 'Sports'],
         image_url: "./static/members_portrait/kiran.png",
         description: "Faculty SPOC for DSC REVA, Coordinator for Hackathon Club, SPOC from REVA University for Smart India Hackathon (SIH), Assistant Professor in School of Computing and Information Technology.",
-        socials: [
-            {
-                site:"linkedin",
-                link:"nil"
-            },
-        ],
+
     }, 
     {
         name: "Chaithra M H",
@@ -321,12 +316,7 @@ const members = [
         tags: ['Faculty coordinator for DSC',  'Placement Coordinator', 'Assistant Professor in School of C & IT'],
         image_url: "./static/members_portrait/chaitra.jpg",
         description: "Chaithra M H, Assistant Professor, School of C&IT. An innovative and knowledgeable professional having 8 years experience as a Assistant Professor @REVA University.Proficient in developing new lessons and activities to expand learning opportunities.Extensive participation on committees and extra-curricular activities.Proficient in giving conceptual knowledge.",
-        socials: [
-            {
-                site:"linkedin",
-                link:"nil"
-            },
-        ],
+       
     },
     {
         name: "Dr Manjunath R Kounte",
@@ -335,12 +325,16 @@ const members = [
         tags: ['Sports',  'Research', 'Current Affairs'],
         image_url: "./static/members_portrait/manjunath.jpg",
         description: "I am one of the faculty mentor for Google DSC at REVA University, Bengaluru. I belive in philosophy of helping and guiding others. I work on making my students successful engineers and entrepreneurs, their by realising my dream of contributing to making our nation a developed country in next few decades. I enjoy watching movies, TV series, reading books, always updated with current affairs. ",
-        socials: [
-            {
-                site:"linkedin",
-                link:"nil"
-            },
-        ],
+        
+    },  
+    {
+        name: "GC Satish",
+        team: "Faculty",
+        title: "Faculty Team",
+        tags: ['Assistant Professor in School of C & IT',  'tech', 'sports'],
+        image_url: "./static/members_portrait/GCS.jpg",
+        description: "Excellence is not an act but a habit.",
+        
     },  
 
     
