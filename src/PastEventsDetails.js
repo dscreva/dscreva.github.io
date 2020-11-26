@@ -2,6 +2,14 @@
 const events = [
     {
 
+        title: "Learning From Experiences",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas lorem quis ante pulvinar, vel mollis velit euismod.",
+        image_url: "./static/past_events/FirebaseChat.JPG",
+        link: "//dsc.community.dev/events/details/developer-student-clubs-reva-university-presents-learning-from-experiences/"
+        
+    },
+    {
+
         title: "REVA HACK 2020 </> | Powered By REVA Univerity",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas lorem quis ante pulvinar, vel mollis velit euismod.",
         image_url: "./static/past_events/RevaHack.JPG",
