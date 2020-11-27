@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, h4 *, h5 *, h6 *{
+  font-family: "Product Sans";
+}
+
+*{
+  font-family: "Open Sans";
+}

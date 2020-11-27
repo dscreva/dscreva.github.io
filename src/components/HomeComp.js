@@ -21,13 +21,14 @@ function HomeComp() {
       </section>
 
       <section className="hero">
-        <h2>
-          Joi<span style={{ color: "#EA4335" }}>n</span> Our{" "}
-          <span style={{ color: "#FBBC04" }}>C</span>om
-          <span style={{ color: "#1A73E8" }}>m</span>u
-          <span style={{ color: "#0F9D58" }}>n</span>ity
-        </h2>
-        <p>Our main mission here at DSC REVA is to provide students access to the latest updates in technology through workshops, hackathons, and seminars by experts from the industry. And remember, the only way to stay relevant in the field of tech is to be ready to learn and unlearn whenever required.</p>
+        <div className="hero_cont_wrap">
+          <h2>
+            Joi<span style={{color: "#DB4437"}}>n</span> 
+            O<span style={{color: "#F4B400"}}>u</span>r 
+            Co<span style={{color: "#0F9D58"}}>m</span>muni<span style={{color: "#4285F4"}}>t</span>y
+          </h2>
+          <p>Our main mission here at DSC REVA is to provide students access to the latest updates in technology through workshops, hackathons, and seminars by experts from the industry. And remember, the only way to stay relevant in the field of tech is to be ready to learn and unlearn whenever required.</p>
+        </div>
       </section>
 
       <section className="bottom-navigation">

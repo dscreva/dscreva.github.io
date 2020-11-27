@@ -60,26 +60,31 @@ section.hero {
   color: white;
 }
 
+.hero .hero_cont_wrap{
+  position: relative;
+  width: 60%;
+  display: block;
+  margin: auto;
+  top: 20%;
+  background: #7c7c7c44;
+  border-radius: 12px;
+  padding: 12px 20px;
+  backdrop-filter: blur(6px);
+}
+
 .hero h2 {
-  position: absolute;
-  top: 13%;
-  left: 63%;
-  background: -webkit-linear-gradient(#fda003, #fb7106, #d63600);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: translate(-50%, -50%);
+  text-align: center;
   font-size: 2.5vw;
-  color: #666c73;
-  font-weight: 900;
+  color: #fcfcfc;
+  font-weight: 500;
 }
 .hero p {
-  position: absolute;
-  top: 30%;
-  left: 53%;
-  transform: translate(-26%, -50%);
-  color: rgb(85, 85, 85);
-  font-weight: 600;
+  text-align: justify center;
   font-size: 1.1vw;
+  color: #fcfcfc;
+  font-weight: 400;
+  display: block;
+  margin: auto;
 }
 
 .about-us-hover-btn {
