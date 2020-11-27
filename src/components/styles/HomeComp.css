@@ -45,9 +45,14 @@
 }
 
 section.hero {
+<<<<<<< HEAD
   background-image: url("../static/home_theme/winter-sample.png");
+=======
+  background-image: url("../static/home_theme/background.png");
+>>>>>>> 4b0e779ce66fac19771fb3662fdbfeed5cfa0afd
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   margin: 2rem 1rem;
   border-radius: 10px;
@@ -59,31 +64,37 @@ section.hero {
   color: white;
 }
 
-
-
 .hero h2 {
   position: absolute;
-  top: 15%;
-  left: 50%;
+  top: 13%;
+  left: 63%;
+  background: -webkit-linear-gradient(#fda003, #fb7106, #d63600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: translate(-50%, -50%);
   font-size: 2.5vw;
+  color: #666c73;
+  font-weight: 900;
 }
 .hero p {
   position: absolute;
-  top: 32%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 53%;
+  transform: translate(-26%, -50%);
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.1vw;
 }
 
-.about-us-hover-btn {  
+.about-us-hover-btn {
   position: relative;
 }
 
 .about-us-hover-btn:after {
-  display:block;
-  content: '';
-  border-bottom: solid 3px #EA4335;  
-  transform: scaleX(0);  
+  display: block;
+  content: "";
+  border-bottom: solid 3px #ea4335;
+  transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
 
@@ -106,16 +117,26 @@ section.hero {
     width: 8%;
   }
   section.hero {
+<<<<<<< HEAD
     background-image: url("../static/home_theme/winter-sample.png");
+=======
+    background-image: url("../static/home_theme/background-mobile.jpg");
+>>>>>>> 4b0e779ce66fac19771fb3662fdbfeed5cfa0afd
   }
   .hero h2 {
-    top: 10%;
-    left: 49%;
-    font-size: 4.5vw;
+    top: 3%;
+    left: 24%;
+    /* background: -webkit-linear-gradient(rgb(85, 85, 85), rgb(85, 85, 85), rgb(85, 85, 85));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    transform: translate(-13%, -10%);
+    font-size: 6vw;
   }
   .hero p {
-    top: 35%;
+    top: 30%;
+    left: 50%;
     width: 85%;
+    transform: translate(-50%, -50%);
     font-size: 3.5vw;
   }
 
@@ -135,10 +156,19 @@ section.hero {
     position: absolute;
     right: 8vw;
   }
-  
 
   /* .home section.bottom-navigation a:last-child {
    position: static; 
     margin-right: auto;
   } */
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .hero p {
+    position: absolute;
+    top: 35%;
+    left: 53%;
+    transform: translate(-26%, -50%);
+    font-size: 1.5vw;
+  }
 }
