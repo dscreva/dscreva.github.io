@@ -53,6 +53,10 @@ section.hero {
   margin: 2rem 1rem;
   border-radius: 10px;
   height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 3vw 0px 3vw;
+  justify-content: center;
 }
 
 .hero {
@@ -60,16 +64,13 @@ section.hero {
   color: white;
 }
 
-.hero .hero_cont_wrap{
-  position: relative;
-  width: 60%;
-  display: block;
-  margin: auto;
-  top: 20%;
+.hero_cont_wrap{
   background: #7c7c7c44;
   border-radius: 12px;
-  padding: 12px 20px;
+  padding: 1.5vw;
+  max-width: 850px;
   backdrop-filter: blur(6px);
+  margin-bottom: 10vw;
 }
 
 .hero h2 {
@@ -80,7 +81,7 @@ section.hero {
 }
 .hero p {
   text-align: justify center;
-  font-size: 1.1vw;
+  font-size: 17px;
   color: #fcfcfc;
   font-weight: 400;
   display: block;
@@ -126,15 +127,19 @@ section.hero {
     /* background: -webkit-linear-gradient(rgb(85, 85, 85), rgb(85, 85, 85), rgb(85, 85, 85));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-    transform: translate(-13%, -10%);
+    /* transform: translate(-13%, -10%); */
     font-size: 6vw;
   }
+  .hero_cont_wrap{
+    margin-bottom: 0px;
+    padding: 5vw 0px 5vw 0px;
+  }
+
   .hero p {
     top: 30%;
     left: 50%;
     width: 85%;
-    transform: translate(-50%, -50%);
-    font-size: 3.5vw;
+    font-size: 15px;
   }
 
   .home section.bottom-navigation a {
@@ -157,9 +162,9 @@ section.hero {
   /* .home section.bottom-navigation a:last-child {
    position: static; 
     margin-right: auto;
-  } */
+  }*/
 }
-
+/* 
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .hero p {
     position: absolute;
@@ -168,4 +173,4 @@ section.hero {
     transform: translate(-26%, -50%);
     font-size: 1.5vw;
   }
-}
+} */

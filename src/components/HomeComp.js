@@ -23,7 +23,7 @@ function HomeComp() {
       <section className="hero">
         <div className="hero_cont_wrap">
           <h2>
-            Joi<span style={{color: "#DB4437"}}>n</span> 
+            Joi<span style={{color: "#DB4437"}}>n&nbsp;</span> 
             O<span style={{color: "#F4B400"}}>u</span>r 
             Co<span style={{color: "#0F9D58"}}>m</span>muni<span style={{color: "#4285F4"}}>t</span>y
           </h2>
