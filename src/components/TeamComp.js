@@ -92,6 +92,19 @@ class Team extends Component{
           }
 
          });
+      var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems, { edge: "right" });
+        var instance = M.Sidenav.getInstance(elems[0]);
+        var teamSelectors = document.getElementsByClassName(
+          "sidenav-team-selector"
+        );
+        for (var i = 0; i < teamSelectors.length; i++) {
+          teamSelectors[i].addEventListener(
+            "click",
+            () => instance.close(),
+            false
+          );
+        }
   }
 
   render(){
@@ -110,10 +123,10 @@ class Team extends Component{
           <div className="col m9 l9"><TeamDetails member={this.state.team_members[this.state.curr_member]} handlePrev={this.handlePrev} handleNext={this.handleNext}/></div>
         </div>
         <div className="bottom_slider">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
+          <div className="swiper-container">
+            <div className="swiper-wrapper">
               {members.map(function (member, index) {
-                  return <div class="swiper-slide"><img class="member-image-slider" alt="Team Members" src={require(`${member.image_url}`)} key={index}/></div>
+                  return <div className="swiper-slide" key={index}><img className="member-image-slider" alt="Team Members" src={require(`${member.image_url}`)} key={index}/></div>
                 })}
             </div>
           </div>
