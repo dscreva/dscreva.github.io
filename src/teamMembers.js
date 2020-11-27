@@ -259,12 +259,12 @@ const members = [
         ],
     },  
     {
-        name: "Saketh",
+        name: "Saket",
         team: "Mentors",
         title: "Mentor Team",
-        tags: ['Art', 'coffee', 'gaming'],
+        tags: ['Coding', 'coffee', 'Music'],
         image_url: "./static/members_portrait/saket.jpg",
-        description: "I am here to turn your ideas into code, powered by our thoughts and technologies. ML/CV enthusiast and Web Developer, wanting to find the 777.",
+        description: "Long exposure to dark mode has made me Code blooded, making me addicted to the unique parseltongue, Python. I now speak in this cryptic language, while often been fueled from the energy of black coffee whilst listening to dope songs",
         socials: [
             {
                 site:"linkedin",
