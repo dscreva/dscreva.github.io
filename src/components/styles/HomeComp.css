@@ -45,7 +45,7 @@
 }
 
 section.hero {
-  background-image: url("../static/home_theme/test.png");
+  background-image: url("../static/home_theme/winter-sample.png");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -106,7 +106,7 @@ section.hero {
     width: 8%;
   }
   section.hero {
-    background-image: url("../static/home_theme/background-phone.jpg");
+    background-image: url("../static/home_theme/winter-sample.png");
   }
   .hero h2 {
     top: 10%;
