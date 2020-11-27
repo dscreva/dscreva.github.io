@@ -25,7 +25,7 @@ class App extends Component {
           <Route
             path="/blogs"
             component={() => {
-              window.location.href = "https://medium.com/";
+              window.location.href = "https://medium.com/dscreva";
               return null;
             }}
           />
