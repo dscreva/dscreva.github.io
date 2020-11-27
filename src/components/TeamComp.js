@@ -16,6 +16,7 @@ import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 //Style file
 import './styles/TeamComp.css';
+import { Link } from "react-router-dom";
 
 class Team extends Component{
   constructor(props) {
@@ -98,8 +99,10 @@ class Team extends Component{
       <div>
         <TeamSidenav members={members} setTeamMembers={this.setTeamMembers} setCurrMember={this.setCurrMember}/>
         <div className="header">
-          <img src={Logo} className="logo" alt=""/>
-          DSC REVA
+          <Link to="/" style={{color:"#666C73"}}>
+            <img src={Logo} className="logo" alt=""/>
+            DSC REVA
+          </Link>
           <a href="#/team" data-target="slide-out" className="sidenav-trigger "><i className="material-icons">menu</i></a>
         </div>
         <div className="row">

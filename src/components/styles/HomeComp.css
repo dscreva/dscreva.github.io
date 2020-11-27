@@ -68,7 +68,7 @@ section.hero {
   background: #7c7c7c44;
   border-radius: 12px;
   padding: 1.5vw;
-  max-width: 850px;
+  max-width: 60vw;
   backdrop-filter: blur(6px);
   margin-bottom: 10vw;
 }
@@ -133,6 +133,7 @@ section.hero {
   .hero_cont_wrap{
     margin-bottom: 0px;
     padding: 5vw 0px 5vw 0px;
+    max-width: 70vw;
   }
 
   .hero p {

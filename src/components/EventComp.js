@@ -2,7 +2,9 @@ import React, {Component} from "react";
 import Logo from './static/logo.svg';
 import UpcomingEvents from './UpcomingEvents';
 import PastEvents from './PastEvents';
-import events_new from '../UpcomingEventDetails'
+import events_new from '../UpcomingEventDetails';
+import { Link } from "react-router-dom";
+
 
 class Events extends Component{
 
@@ -54,8 +56,10 @@ class Events extends Component{
     return(
       <div>
         <div className="header">
-          <img src={Logo} className="logo" alt=""/>
-          DSC REVA
+          <Link to="/" style={{color:"#666C73"}}>
+            <img src={Logo} className="logo" alt=""/>
+            DSC REVA
+          </Link>
         </div>
 
           {/* Here we are rendering the Upcoming Events and Past Events Components */}
