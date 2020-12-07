@@ -46,7 +46,7 @@
 .pastEventsImagePoster{
   border-radius: 30px;
   width: 100% !important;
-  height: auto !important;
+  height: auto ;
   padding: 17px;
 }
 
