@@ -2,6 +2,13 @@
 const events = [
     {
 
+        title: "DSC WOW",
+        image_url: "./static/past_events/DscWow.jpeg",
+        link: "https://dsc.community.dev/events/details/developer-student-clubs-reva-university-presents-dsc-wow-indias-biggest-collaboration-prizes-worth-10-lakhs/"
+        
+    },
+    {
+
         title: "Introduction to Android Study Jam",
         image_url: "./static/past_events/AndroidStudyJam.jpg",
         link: "https://dsc.community.dev/events/details/developer-student-clubs-reva-university-presents-session-0-introduction-to-android-study-jam-1/"
