@@ -2,6 +2,20 @@
 const events = [
     {
 
+        title: "Fireside with Flutter Expert",
+        image_url: "./static/past_events/FiresideWithFlutterExpert.JPG",
+        link: "https://dsc.community.dev/events/details/developer-student-clubs-reva-university-presents-fireside-with-flutter-expert/"
+        
+    },
+    {
+
+        title: "30 Days of Web Development",
+        image_url: "./static/past_events/30DaysOfWebDev.JPG",
+        link: "https://dsc.community.dev/events/details/developer-student-clubs-reva-university-presents-30-days-of-web-development/"
+        
+    },
+    {
+
         title: "DSC WOW",
         image_url: "./static/past_events/DscWow.jpeg",
         link: "https://dsc.community.dev/events/details/developer-student-clubs-reva-university-presents-dsc-wow-indias-biggest-collaboration-prizes-worth-10-lakhs/"
