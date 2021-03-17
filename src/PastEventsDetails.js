@@ -2,6 +2,12 @@
 const events = [
     {
 
+        title: "Solution Challenge & Hash Code: INFO SESSION",
+        image_url: "./static/past_events/SolutionChallenge.png",
+        link: "https://dsc.community.dev/events/details/developer-student-clubs-reva-university-presents-solution-challenge-hash-code-info-session/"    
+    },
+    {
+
         title: "Fireside with Flutter Expert",
         image_url: "./static/past_events/FiresideWithFlutterExpert.JPG",
         link: "https://dsc.community.dev/events/details/developer-student-clubs-reva-university-presents-fireside-with-flutter-expert/"
