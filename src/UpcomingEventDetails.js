@@ -1,11 +1,11 @@
 const events_new = [
     {
-        title: "Solution Challenge & Hash Code: INFO SESSION",
-        date: "5th February, 2020",
-        type: "Solution Challenge",
-        description: "Google DSC REVA is back with another event to give you more information on Solutions Challenge 2021 and Hash Code 2021 help you get started.",
-        image_url: "./static/new_events/SolutionChallenge.png",
-        link: "https://dsc.community.dev/events/details/developer-student-clubs-reva-university-presents-solution-challenge-hash-code-info-session/"
+        title: "Solution Challenge Hackathon (Intra University)",
+        date: "12th March, 2021",
+        type: "In-Person",
+        description: "The Solution Challenge is an annual contest presented by Google Developer Student Clubs (GDSC) that invites students to develop solutions for local community problems using one or more Google products or platforms",
+        image_url: "./static/new_events/SolutionChallengeIntrauniversity.jpeg",
+        link: "https://dsc.community.dev/events/details/developer-student-clubs-reva-university-presents-solution-challenge-hackathon-intra-university/"
     
     }
 ]
